@@ -433,6 +433,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "news-kaggle-competition-cs-506-fall-2025",
+          title: 'Kaggle Competition — CS 506 Fall 2025 🏆',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-11-03-kaggle-comp/";
             },},{id: "news-website-launched",
           title: 'website launched 🎉',
           description: "",
