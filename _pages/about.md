@@ -6,7 +6,7 @@ subtitle: master's student in artificial intelligence · boston university
 
 profile:
   align: right
-  image: avatar.jpg      # put your photo as assets/img/avatar.jpg
+  image: profile.JPEG      # put your photo as assets/img/avatar.jpg
   image_circular: true
   more_info: >
     <p>Boston University</p>
