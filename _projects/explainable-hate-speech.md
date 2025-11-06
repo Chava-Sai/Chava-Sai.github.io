@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 title: Explainable Hate Speech Detection (QLoRA + RAG)
 date: 2024-11-01
 description: multilingual pipeline with qlora finetuning and retrieval for grounded explanations
@@ -8,5 +8,4 @@ links:
   - name: code
     url: https://github.com/Chava-Sai/Explainable-Hate-Speech-Detection-using-Generative-AI
 ---
-
-Hybrid of IndicXlit/IndicTrans2 + transformer embeddings; improved macro-F1 and reduced hallucinations in explanations.
+...
