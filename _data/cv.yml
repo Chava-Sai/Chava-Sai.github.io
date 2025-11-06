@@ -2,96 +2,126 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Srinivasa Sai Chava
+    - name: Address
+      value: 135 Washington Street, Apt 53, Brighton, Massachusetts
+    - name: Email
+      value: srinivassaichava@gmail.com
+    - name: Phone
+      value: +1 (857) 498-5012
     - name: Languages
-      value: English, German
+      value: English, Telugu, Hindi
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master of Science in Artificial Intelligence
+      institution: Boston University, Boston, MA, USA
+      year: Expected Dec 2026
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Coursework includes Reinforcement Learning, Machine Learning, Data Science, and AI Systems.
+        - Research focus on Vision–Language Modeling and Responsible AI.
+    - title: Bachelor of Technology in Data Science and Artificial Intelligence
+      institution: Indian Institute of Information Technology, Dharwad, India
+      year: Nov 2021 – May 2025
       description:
-        - Description 1.
-        - Description 2.
+        - Graduated with a CGPA of 7.82/10.
+        - Led multiple research and applied AI projects under the supervision of Dr. Sunil Saumya and Dr. Shankar Biradar.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Machine Learning and Flutter Trainer
+      institution: Datavalley.ai, Vijayawada, India
+      year: Jan 2025 – Jul 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Conducted hands-on ML and Flutter workshops across partner colleges, mentoring student teams in end-to-end project deployment.
+        - Developed a production-grade Flutter app with secure ZegoCloud video integration and UPI-based payment systems.
+    - title: AI-Driven Text Analytics – Team Lead
+      institution: IIIT Dharwad, India
+      year: Aug 2023 – Jul 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Led evaluation of Google Translator vs. AI4Bharat’s IndicTrans2 for Indian-language machine translation.
+        - Demonstrated superior semantic accuracy and linguistic nuance preservation using IndicTrans2.
+    - title: Upwork Freelancer
+      institution: Remote
+      year: 2023 – 2024
       description:
+        - Developed AI-powered object detection and trading bot systems using TensorFlow and PyTorch.
+        - Delivered data-driven automation solutions for small-scale clients and academic prototypes.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Boston Bus Equity
+      year: Sep 2025 – Present
+      description:
+        - Analyzing MBTA bus reliability and service equity using machine learning models and demographic data.
+        - Building predictive models to identify and mitigate disparities in transit performance.
+    - title: RAG-Assisted Explainable Hate Speech Detection
+      year: Feb 2024 – Nov 2024
+      description:
+        - Built a multilingual Generative AI model integrating QLoRA fine-tuning and Retrieval-Augmented Generation.
+        - Reduced hallucinations by 60% and improved contextual accuracy in hate-speech explanations.
+    - title: FakeHate – Multi-Task Detection of Fake News and Hate Speech
+      year: Aug 2023 – Apr 2024
+      description:
+        - Designed a multi-task deep learning model combining IndicXlit, IndicTrans2, and transformer embeddings.
+        - Achieved Hate-F1 of 97.15 and Fake-F1 of 76.21 on benchmark multilingual datasets.
+    - title: Advanced Currency Recognition and Validation using AI Models
+      year: Jan 2025 – Apr 2025
+      description:
+        - Built a Random-Forest-based counterfeit detection system using Hu Moments and Haralick features.
+        - Designed for scalable mobile integration and real-time currency authentication.
+    - title: Enhanced Hyperspectral Image Classification
+      year: Aug 2024 – Nov 2024
+      description:
+        - Implemented a two-stream CNN for joint spatial-spectral feature extraction in hyperspectral imagery.
+        - Achieved state-of-the-art accuracy on benchmark datasets through spatial augmentation.
 
-- title: Honors and Awards
+- title: Publications
   type: time_table
   contents:
-    - year: 1921
+    - title: IIITDWD_SVC@DravidianLangTech-2024 – Breaking Language Barriers
+      institution: Proceedings of DravidianLangTech-EACL 2024
+      year: 2024
+      description:
+        - Hate Speech Detection in Telugu-English Code-Mixed Text (Ranked 14th, Macro-F1 = 0.65).
+        - Authors: Srinivasa Sai Chava, Rangoori Kumar, Sunil Saumya, Shankar Biradar.
+
+- title: Certifications
+  type: time_table
+  contents:
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Advanced Learning Algorithms – Stanford Online
+        - Flutter and Dart: The Complete Guide – Udemy
+    - year: 2023
       items:
-        - Max Planck Medal
+        - Supervised Machine Learning – Stanford Online
+        - Deep Learning with PyTorch (GANs) – Stanford Online
+        - 6★ in Problem Solving, 5★ in C/C++/Python – HackerRank
+
+- title: Leadership & Extracurricular
+  type: list
+  contents:
+    - Core Team Member – Google Developer Students Club, IIIT Dharwad (2023–2024): Led ML and app-development initiatives, organized workshops and hackathons.
+    - Session Organizer – Artificial Intelligence Outreach (2023): Conducted sessions across colleges introducing AI applications.
+    - Cricket Team Representative – IIIT Dharwad: Represented institute in inter-IIIT tournaments promoting sportsmanship and teamwork.
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Artificial Intelligence & Machine Learning
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Explainable and Responsible AI Systems.
+        - Vision–Language Modeling and Multilingual NLP.
+    - title: Applied Research
       items:
-        - Description 1.
-        - Description 2.
+        - Public Data Equity and Societal Impact.
+        - Multimodal Representation Learning.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Cricket, mentoring peers, open-source projects, and building practical AI tools.

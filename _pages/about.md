@@ -2,54 +2,31 @@
 layout: about
 title: about
 permalink: /
-subtitle: master's student in artificial intelligence · boston university
+subtitle: Masters in Artificial Intelligence<a href='https://www.bu.edu/cs/masters/program/ai/'>Boston University</a> | Boston, Massachusetts | [srinivassaichava@gmail.com](mailto:srinivassaichava@gmail.com)
 
 profile:
   align: right
-  image: profile.JPEG      # put your photo as assets/img/avatar.jpg
-  image_circular: true
+  image: profile.JPEG
+  image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Boston University</p>
-    <p>Boston, MA 02215</p>
-    <p><a href="mailto:srinivassaichava@gmail.com">srinivassaichava@gmail.com</a></p>
+    <p>Boston, Massachusetts 02135</p>
 
-selected_papers: true
-social: true
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true
-  scrollable: true
-  limit: 5
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true
-  limit: 3
+  enabled: false
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I’m **Srinivasa Sai Chava**, a graduate student in the **M.S. Artificial Intelligence** program at **Boston University**.  
-My research interests span **machine learning**, **vision–language models**, and **responsible NLP**.
+I am a Master’s student in the Artificial Intelligence program at Boston University, specializing in machine learning, natural language processing, and computer vision. My research focuses on developing explainable and socially responsible AI systems that bridge technology and human impact.
 
----
+My recent work spans vision-language modeling, hate-speech detection, and public-transit equity analysis, where I integrate deep learning with real-world data for social good. I have co-authored research presented at DravidianLangTech-EACL 2024, and continue exploring multilingual and low-resource NLP challenges.
 
-### currently
-- 🚌 Working on *Boston Bus Equity* — analyzing MBTA ridership and reliability across neighborhoods  
-- 🧠 Researching *MedVisionCLIP* — dual-branch vision-language segmentation (thesis with IIT Guwahati)  
-- 💬 Building *Explainable Hate Speech Detection* pipelines with QLoRA + RAG  
-
----
-
-### previously
-- **ML & Flutter Trainer**, Datavalley.ai  
-- **Text Analytics & App Development**, IIIT Dharwad  
-- **Events Head**, Samiksha 2023 @ IIT Guwahati  
-
----
-
-### tech i use
-Python · PyTorch · scikit-learn · Hugging Face · Pandas · Docker · Git · AWS · Azure  
-
----
-
-Thanks for visiting my page — feel free to connect via  
-📧 [srinivassaichava@gmail.com](mailto:srinivassaichava@gmail.com) or 🌐 [LinkedIn](https://www.linkedin.com/in/chava-srinivasa-sai/)
+Before joining Boston University, I earned my B.Tech in Data Science and Artificial Intelligence from IIIT Dharwad, where I led multiple applied research projects and trained peers in AI and Flutter development. Beyond academics, I enjoy mentoring, contributing to open-source initiatives, and building systems that make AI more transparent and inclusive.
