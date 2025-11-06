@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-",
+    title: "",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -29,13 +29,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
-          },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
           title: "cv",
@@ -451,7 +444,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-website-launched",
+          title: 'website launched 🎉',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-11-05-site-launched/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
@@ -496,6 +494,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-fakehate-multitask-fake-news-hate-speech",
+          title: 'FakeHate — Multitask Fake News + Hate Speech',
+          description: "joint modeling of fake news and hate speech in multilingual social media",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/fakehate-multitask/";
+            },},{id: "projects-explainable-hate-speech-detection-qlora-rag",
+          title: 'Explainable Hate Speech Detection (QLoRA + RAG)',
+          description: "multilingual pipeline with qlora finetuning and retrieval for grounded explanations",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/explainable-hate-speech/";
+            },},{id: "projects-boston-bus-equity",
+          title: 'Boston Bus Equity',
+          description: "analyzing mbta bus reliability and equity across neighborhoods",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/boston-bus-equity/";
             },},{
         id: 'social-email',
         title: 'email',
