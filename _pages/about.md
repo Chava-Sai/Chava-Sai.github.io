@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: Masters in Artificial Intelligence<a href='https://www.bu.edu/cs/masters/program/ai/'>Boston University</a> | Boston, Massachusetts | [srinivassaichava@gmail.com](mailto:srinivassaichava@gmail.com)
+subtitle: Masters in Artificial Intelligence <a href="https://www.bu.edu/cs/masters/program/ai/">Boston University</a> | Boston, Massachusetts | <a href="mailto:srinivassaichava@gmail.com">srinivassaichava@gmail.com</a>
 
 profile:
   align: right
-  image: profile.JPEG
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Boston, Massachusetts 02135</p>
