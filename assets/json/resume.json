@@ -1,0 +1,261 @@
+{
+  "basics": {
+    "name": "Srinivasa Sai Chava",
+    "label": "M.S. Artificial Intelligence Student",
+    "image": "",
+    "email": "srinivassaichava@gmail.com",
+    "phone": "+1 (857) 498-5012",
+    "url": "https://chava-sai.github.io",
+    "summary": "Graduate student in Artificial Intelligence at Boston University specializing in machine learning, NLP, and computer vision with a focus on explainable and socially responsible AI.",
+    "location": {
+      "address": "135 Washington Street, Apt 53",
+      "postalCode": "MA 02135",
+      "city": "Boston",
+      "countryCode": "US",
+      "region": "Massachusetts"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Chava-Sai",
+        "url": "https://github.com/Chava-Sai"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "chava-srinivasa-sai",
+        "url": "https://www.linkedin.com/in/chava-srinivasa-sai/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Datavalley.ai",
+      "position": "Machine Learning and Flutter Trainer (Contract)",
+      "url": "",
+      "startDate": "2025-01-01",
+      "endDate": "2025-07-01",
+      "summary": "Conducted hands-on ML and Flutter workshops across partner colleges; mentored student teams through end-to-end project deployment.",
+      "highlights": [
+        "Built and demoed a production-grade Flutter app with role-based auth, ZegoCloud video, and UPI payments."
+      ]
+    },
+    {
+      "name": "IIIT Dharwad",
+      "position": "Team Lead, AI-Driven Text Analytics (MT Evaluation)",
+      "url": "https://iiitdwd.ac.in/",
+      "startDate": "2023-08-01",
+      "endDate": "2024-07-01",
+      "summary": "Led comparative evaluation of Google Translate vs. AI4Bharat’s IndicTrans2 on IIT Bombay multilingual datasets.",
+      "highlights": [
+        "Implemented STS-based evaluation; showed IndicTrans2 preserved semantic nuance better for Indian languages."
+      ]
+    },
+    {
+      "name": "Upwork (Freelance)",
+      "position": "AI/ML Developer",
+      "url": "",
+      "startDate": "2023-01-01",
+      "endDate": "2024-12-31",
+      "summary": "Delivered prototypes in computer vision and automation.",
+      "highlights": [
+        "Object-detection pipeline for brand/logo/payment-page identification (TensorFlow/PyTorch).",
+        "Basic market-data trading bot with real-time signals (Python)."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Google Developer Students Club, IIIT Dharwad",
+      "location": "Dharwad, India",
+      "position": "Core Team Member",
+      "url": "",
+      "startDate": "2023-08-01",
+      "endDate": "2024-08-01",
+      "summary": "Led ML and app development initiatives; organized workshops and hackathons.",
+      "highlights": [
+        "Community engagement, peer mentoring, and technical sessions."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Boston University",
+      "location": "Boston, MA, USA",
+      "url": "https://www.bu.edu/cs/masters/program/ai/",
+      "area": "Artificial Intelligence",
+      "studyType": "Master of Science",
+      "startDate": "2025-09-01",
+      "endDate": "2026-12-31",
+      "score": "",
+      "courses": [
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Data Science",
+        "AI Systems"
+      ]
+    },
+    {
+      "institution": "Indian Institute of Information Technology Dharwad",
+      "location": "Dharwad, India",
+      "url": "https://iiitdwd.ac.in/",
+      "area": "Data Science and Artificial Intelligence",
+      "studyType": "Bachelor of Technology",
+      "startDate": "2021-11-01",
+      "endDate": "2025-05-31",
+      "score": "CGPA 7.82/10",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Advanced Learning Algorithms",
+      "date": "2024-02-01",
+      "issuer": "Stanford Online",
+      "url": "",
+      "icon": ""
+    },
+    {
+      "name": "Supervised Machine Learning",
+      "date": "2023-08-01",
+      "issuer": "Stanford Online",
+      "url": "",
+      "icon": ""
+    },
+    {
+      "name": "Deep Learning with PyTorch: GANs",
+      "date": "2023-06-01",
+      "issuer": "Stanford Online",
+      "url": "",
+      "icon": ""
+    },
+    {
+      "name": "Flutter & Dart – The Complete Guide",
+      "date": "2024-02-01",
+      "issuer": "Udemy",
+      "url": "",
+      "icon": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "IIITDWD_SVC@DravidianLangTech-2024: Breaking Language Barriers; Hate Speech Detection in Telugu-English Code-Mixed Text",
+      "publisher": "DravidianLangTech @ EACL 2024",
+      "releaseDate": "2024-03-01",
+      "url": "https://aclanthology.org/2024.dravidianlangtech-1.19/",
+      "summary": "Shared-task paper on hate-speech detection in code-mixed Indian languages; co-authored with Rangoori Kumar, Sunil Saumya, and Shankar Biradar."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming & Frameworks",
+      "level": "",
+      "icon": "",
+      "keywords": [
+        "Python",
+        "C++",
+        "Java",
+        "PyTorch",
+        "TensorFlow",
+        "Keras",
+        "scikit-learn",
+        "Hugging Face Transformers",
+        "LangChain",
+        "FastAPI",
+        "Streamlit"
+      ]
+    },
+    {
+      "name": "ML & Data Science",
+      "level": "",
+      "icon": "",
+      "keywords": [
+        "NLP",
+        "Vision–Language",
+        "RAG",
+        "QLoRA",
+        "Feature Engineering",
+        "XGBoost",
+        "ONNX",
+        "OpenCV",
+        "Tesseract"
+      ]
+    },
+    {
+      "name": "Developer & MLOps",
+      "level": "",
+      "icon": "",
+      "keywords": [
+        "Linux",
+        "Git",
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Azure",
+        "Airflow",
+        "ElasticSearch",
+        "MySQL"
+      ]
+    }
+  ],
+  "languages": [
+    { "language": "English", "fluency": "Fluent", "icon": "" },
+    { "language": "Telugu", "fluency": "Native", "icon": "" },
+    { "language": "Hindi", "fluency": "Professional working", "icon": "" }
+  ],
+  "interests": [
+    {
+      "name": "Research",
+      "icon": "",
+      "keywords": [
+        "Explainable & Responsible AI",
+        "Multilingual NLP",
+        "Vision–Language Models",
+        "Public-interest Data Science"
+      ]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "Boston Bus Equity",
+      "summary": "Analyzing MBTA bus performance and equity by correlating ridership/reliability with community demographics; building predictive models for delay risk.",
+      "highlights": ["Time-series and tree-based models", "Equity-focused analysis"],
+      "startDate": "2025-09-01",
+      "endDate": "",
+      "url": "https://github.com/Chava-Sai/Boston-Bus-Equity-CS506-Final-Project"
+    },
+    {
+      "name": "RAG-Assisted Explainable Hate Speech Detection",
+      "summary": "Multilingual pipeline integrating QLoRA fine-tuning with RAG to produce grounded hate-speech predictions and explanations; reduced hallucinations by ~60%.",
+      "highlights": ["IndicXlit/IndicTrans2", "BERT/XLM-R/Electra embeddings"],
+      "startDate": "2024-02-01",
+      "endDate": "2024-11-01",
+      "url": "https://github.com/Chava-Sai/Explainable-Hate-Speech-Detection-using-Generative-AI"
+    },
+    {
+      "name": "FakeHate – Multitask Fake News + Hate Speech",
+      "summary": "Joint model for fake news and hate speech on multilingual social media; improved Hate F1 to 97.15 and Fake F1 to 76.21.",
+      "highlights": ["Multitask learning", "Transformer embeddings + clustering"],
+      "startDate": "2023-08-01",
+      "endDate": "2024-04-01",
+      "url": "https://github.com/Chava-Sai/Fake-Hate-Investigating-the-role-of-fake-narratives-in-spreading-hateful-reactions"
+    },
+    {
+      "name": "Advanced Currency Recognition & Validation",
+      "summary": "Counterfeit detection using Hu Moments, Haralick texture, color histograms, BoVW, and Random Forest; designed for mobile integration.",
+      "highlights": ["Classical CV + ML", "Real-time oriented"],
+      "startDate": "2025-01-01",
+      "endDate": "2025-04-01",
+      "url": ""
+    },
+    {
+      "name": "Enhanced Hyperspectral Image Classification",
+      "summary": "Two-stream CNN with spatial–spectral features and data augmentation; achieved SOTA-level accuracy on benchmarks.",
+      "highlights": ["Remote sensing", "Spatial–spectral modeling"],
+      "startDate": "2024-08-01",
+      "endDate": "2024-11-01",
+      "url": ""
+    }
+  ]
+}
