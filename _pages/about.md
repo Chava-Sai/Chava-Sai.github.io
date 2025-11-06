@@ -1,34 +1,22 @@
 ---
 layout: about
 title: about
-permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+permalink: /about/
+subtitle: master's student in ai @ boston university
+profiles: true     # shows icons from _includes/social.html
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! I’m **Srinivasa Sai Chava** (Sai). I’m a graduate student in BU’s MSAI program.
+My interests span **ML systems**, **vision–language**, and **responsible NLP**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+- currently: projects on MBTA service equity, explainable hate-speech detection, and vision-language segmentation
+- previously: ML + Flutter trainer @ Datavalley.ai; led Indian-language MT evaluation at IIIT Dharwad
+- tools i use a lot: Python, PyTorch, scikit-learn, Hugging Face, Docker, Git, AWS/Azure
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+If you’re hiring for summer 2026 internships or research, I’d love to chat.
+
+{% include contact_note.html note="best way to reach me: email ↑" %}
+
+{% if site.icon %}
+<img src="/assets/img/avatar.jpg" width="160" alt="Sai Chava headshot" />
+{% endif %}
