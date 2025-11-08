@@ -2,7 +2,7 @@
 layout: page
 title: Translators Comparison — Google vs AI4Bharat (IndicTrans2)
 description: STS & BLEU evaluation of Google Translate vs. AI4Bharat’s IndicTrans2 on IIT-Bombay Hindi–English data.
-img: /assets/img/projects/translators.png  # optional: add an image at this path or delete this line
+img: assets/img/translators.png  # optional: add an image at this path or delete this line
 importance: 1
 category: work
 links:

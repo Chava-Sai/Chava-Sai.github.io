@@ -1,81 +1,87 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Explainable Hate Speech Detection using Generative AI
+description: Multilingual hate-speech and fake-news detection using QLoRA and Retrieval-Augmented Generation (RAG).
+img: /assets/img/LLMArchitecture.png    # preview image on the projects grid
 importance: 3
 category: work
+links:
+  - name: code
+    url: https://github.com/Chava-Sai/Explainable-Hate-Speech-Detection-using-Generative-AI
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
+This project explores the detection of **hate speech** and **fake news** using **Quantized Low-Rank Adaptation (QLoRA)** and **Retrieval-Augmented Generation (RAG)**.  
+It combines generative and retrieval-based approaches to identify harmful content with high accuracy and interpretability.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div class="text-center my-2">
+  <img src="{{ '/assets/img/RAGWorkflow.png' | relative_url }}" alt="Project Architecture" class="img-fluid rounded z-depth-1" width="600" loading="lazy">
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+## Features
+- **Transliteration & Translation** — Uses *IndicXlit* and *IndicTrans2* to normalize code-mixed Hindi–English text.  
+- **Embedding Extraction** — Employs *BERT*, *XLM-RoBERTa*, and *Electra* for robust multilingual embeddings.  
+- **QLoRA Fine-Tuning** — Efficiently fine-tunes large models by adapting low-rank matrices within quantized layers.  
+- **RAG Integration** — Combines retrieval from a vector database (via *LangChain*) with generation for grounded classification.  
+
+---
+
+## Model Architecture
+
+### Workflow Overview
+1. **Data Preprocessing**
+   - Clean, transliterate, and translate code-mixed Hindi–English text using *IndicXlit* and *IndicTrans2*.  
+   - Remove unwanted symbols and normalize punctuation.  
+   - Manually label data as **Hate/Non-Hate** and **Fake/Non-Fake**.
+
+2. **QLoRA Fine-Tuning**
+   - LoRA updates only a subset of parameters using low-rank matrices.  
+   - QLoRA adds quantization for memory-efficient training on 7B-parameter models.
+
+<div class="text-center my-2">
+  <img src="{{ '/assets/img/LLMArchitecture.png' | relative_url }}" alt="LoRA Architecture" class="img-fluid rounded z-depth-1" width="600" loading="lazy">
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+
+3. **Retrieval-Augmented Generation (RAG)**
+   - Retrieves relevant context documents from a vector store using *LangChain*.  
+   - Incorporates retrieved text into generation, producing grounded, explainable predictions.
+
+<div class="text-center my-2">
+  <img src="{{ '/assets/img/LLMFlowChart.png' | relative_url }}" alt="RAG Workflow" class="img-fluid rounded z-depth-1" width="600" loading="lazy">
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+4. **Training Hyperparameters**
+   - Applied to models such as *Mistral 7B*, *DeepSeek 7B*, *Zephyr Alpha 7B*, and *Zephyr Beta 7B*.  
+   - Parameters (LoRA rank, dropout, quantization bits) tuned for efficiency without GPU overload.
 
-{% raw %}
+---
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+## Results
+
+### Hate-Speech Detection
+| Model | Macro-F1 (QLoRA) | Macro-F1 (RAG + QLoRA) |
+|:------|:---------------:|:----------------------:|
+| Mistral 7B | 72.3 | **72.8** |
+| DeepSeek 7B | 72.3 | 70.9 |
+| Zephyr Beta 7B | 69.6 | 70.8 |
+| Zephyr Alpha 7B | 67.1 | 69.7 |
+
+### Fake-News Detection
+| Model | Macro-F1 (QLoRA) | Macro-F1 (RAG + QLoRA) |
+|:------|:---------------:|:----------------------:|
+| Mistral 7B | 77.3 | **78.2** |
+| DeepSeek 7B | 74.7 | **78.4** |
+| Zephyr Beta 7B | 77.3 | 78.2 |
+| Zephyr Alpha 7B | 74.7 | 78.4 |
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/Chava-Sai/Explainable-Hate-Speech-Detection-using-Generative-AI
+cd Explainable-Hate-Speech-Detection-using-Generative-AI
+pip install -r requirements.txt
 ```
-
-{% endraw %}
