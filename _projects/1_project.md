@@ -1,81 +1,165 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Translators Comparison — Google vs AI4Bharat (IndicTrans2)
+description: STS & BLEU evaluation of Google Translate vs. AI4Bharat’s IndicTrans2 on IIT-Bombay Hindi–English data.
+img: /assets/img/projects/translators.png  # optional: add an image at this path or delete this line
 importance: 1
 category: work
-related_publications: true
+links:
+  - name: code
+    url: https://github.com/Chava-Sai/Translators_Comparsion
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Problem Statement
+In light of Google Translate’s weaknesses for low-resource and certain Indic languages, can we identify a stronger alternative?  
+How do those alternatives compare on **accuracy** and **semantic fidelity** across diverse linguistic contexts?
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div class="d-flex gap-3 my-3">
+  <img src="https://i.imgur.com/pDtiiou.png" width="120" alt="Google Translate logo">
+  <img src="https://i.imgur.com/0JSSL2o.png" width="130" alt="AI4Bharat logo">
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Dataset
+We use the **IIT Bombay** Hindi–English parallel corpus (Kaggle mirror), ~**1M** sentence pairs.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+## Methodology (Hindi → English)
+1. Feed Hindi sentences to **two translators** (Google Translate and **IndicTrans2**).  
+2. Compare each translation to the **reference English** using:
+   - **STS** (Semantic Textual Similarity; 0–1 scale)  
+   - **BLEU** (n-gram overlap)
+
+## Google Translate — Neural Machine Translation (NMT)
+Google Translate uses NMT trained on large bilingual corpora and attention-based architectures.
+
+<div class="my-2">
+  <img src="https://i.imgur.com/OelpDRU.png" alt="Google NMT Architecture" class="img-fluid rounded z-depth-1">
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+
+### Sample Translations (Google)
+<table class="table table-sm">
+  <thead><tr><th>Hindi</th><th>Reference English</th><th>Google Translation</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>ऐ मेरे बन्दों! आज न तुम्हें कोई भय है और न तुम शोकाकुल होगे।</td>
+      <td>“O My servants, today no fear is on you, neither do you sorrow”</td>
+      <td>O my prisoners! Today you have no fear nor you will be heartbroken</td>
+    </tr>
+    <tr>
+      <td>वही है जो आकाशों में भी पूज्य है और धरती में भी पूज्य है और वह तत्वदर्शी, सर्वज्ञ है</td>
+      <td>And it is He who in heaven is God and in earth is God; He is the All-wise, the All-knowing.</td>
+      <td>He is the one who is also revered in the sky and is also revered in the earth and he is a philosopher, omnisc.</td>
+    </tr>
+    <tr>
+      <td>रहे वे लोग जिन्होंने इनकार किया, तो उनके लिए तबाही है। और उनके कर्मों को अल्लाह ने अकारथ कर दिया</td>
+      <td>But as for the unbelievers, ill chance shall befall them! He will send their works astray.</td>
+      <td>Those who refused, so there is havoc for them. And Allah made their deeds unconscious</td>
+    </tr>
+    <tr>
+      <td>फिर कैसी रही मेरी यातना और मेरे डरावे?</td>
+      <td>How then were My chastisement and My warnings?</td>
+      <td>Then how was my torture and my scared?</td>
+    </tr>
+  </tbody>
+</table>
+
+## AI4Bharat — IndicTrans2
+Transformer-based **encoder–decoder** adapted for Indic languages; script unification (e.g., to Devanagari) improves lexical sharing and translation quality.
+
+<div class="my-2">
+  <img src="https://i.imgur.com/oaxPIK1.png" alt="IndicTrans2 Encoder–Decoder" class="img-fluid rounded z-depth-1">
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Sample Translations (IndicTrans2)
+<table class="table table-sm">
+  <thead><tr><th>Hindi</th><th>Reference English</th><th>IndicTrans2 Translation</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>ऐ मेरे बन्दों! आज न तुम्हें कोई भय है और न तुम शोकाकुल होगे।</td>
+      <td>“O My servants, today no fear is on you, neither do you sorrow”</td>
+      <td>O My servants! Today you will have no fear nor will you grieve</td>
+    </tr>
+    <tr>
+      <td>वही है जो आकाशों में भी पूज्य है और धरती में भी पूज्य है और वह तत्वदर्शी, सर्वज्ञ है</td>
+      <td>And it is He who in heaven is God and in earth is God; He is the All-wise, the All-knowing.</td>
+      <td>He is the one who is God in the heavens and God on the earth. He is the Wise and the All Knowing.</td>
+    </tr>
+    <tr>
+      <td>रहे वे लोग जिन्होंने इनकार किया, तो उनके लिए तबाही है। और उनके कर्मों को अल्लाह ने अकारथ कर दिया</td>
+      <td>But as for the unbelievers, ill chance shall befall them! He will send their works astray.</td>
+      <td>But as for those who disbelieve, for them is perdition. And He will waste their deeds.</td>
+    </tr>
+    <tr>
+      <td>फिर कैसी रही मेरी यातना और मेरे डरावे?</td>
+      <td>How then were My chastisement and My warnings?</td>
+      <td>How [terrible] were My punishment and My warnings!</td>
+    </tr>
+  </tbody>
+</table>
 
-{% raw %}
+## Metrics — STS & BLEU
+**STS** measures meaning similarity on a 0–1 scale: 0 = none, 0.5 = moderate, 1 = identical meanings.  
+**BLEU** captures n-gram overlap with the reference.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="text-center my-2">
+  <img src="https://i.imgur.com/eBAxmSq.png" width="250" alt="STS scale" class="img-fluid rounded z-depth-1">
 </div>
-```
 
-{% endraw %}
+## Results (examples)
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th>Reference English</th>
+      <th>Google</th>
+      <th>IndicTrans2</th>
+      <th>STS (G)</th>
+      <th>STS (I2)</th>
+      <th>BLEU (G)</th>
+      <th>BLEU (I2)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>O My servants, today no fear is on you, neither do you sorrow</td>
+      <td>O my prisoners! Today you have no fear nor you will be heartbroken</td>
+      <td>O My servants! Today you will have no fear nor will you grieve</td>
+      <td>0.2912</td>
+      <td>0.5101</td>
+      <td>0.0026</td>
+      <td>0.0159</td>
+    </tr>
+    <tr>
+      <td>And it is He who in heaven is God and in earth is God; He is the All-wise, the All-knowing.</td>
+      <td>He is the one who is also revered in the sky … philosopher, omnisc.</td>
+      <td>He is the one who is God in the heavens … the Wise and the All Knowing.</td>
+      <td>0.0531</td>
+      <td>0.9191</td>
+      <td>0.0055</td>
+      <td>0.0098</td>
+    </tr>
+    <tr>
+      <td>But as for the unbelievers, ill chance shall befall them! He will send their works astray.</td>
+      <td>Those who refused … Allah made their deeds unconscious</td>
+      <td>But as for those who disbelieve … He will waste their deeds.</td>
+      <td>0.0000</td>
+      <td>0.7391</td>
+      <td>0.0000</td>
+      <td>0.0566</td>
+    </tr>
+    <tr>
+      <td>How then were My chastisement and My warnings?</td>
+      <td>Then how was my torture and my scared?</td>
+      <td>How [terrible] were My punishment and My warnings!</td>
+      <td>0.0000</td>
+      <td>0.2606</td>
+      <td>0.0000</td>
+      <td>0.0039</td>
+    </tr>
+  </tbody>
+</table>
+
+## Takeaways
+- **IndicTrans2** consistently shows **higher STS** and **better BLEU** on challenging religious and formal text styles.  
+- Script unification + Indic pretraining help preserve **semantic nuance** in morphologically rich languages.
+
+---
+**Repo:** <a href="https://github.com/Chava-Sai/Translators_Comparsion" target="_blank">Translators_Comparsion</a>
