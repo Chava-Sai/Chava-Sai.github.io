@@ -18,9 +18,14 @@ The **DravidianLangTech @ EACL 2024** shared task addressed **hate-speech detect
 Our team **IIITDWD_SVC** developed a multilingual NLP pipeline integrating transliteration, translation, and fine-tuned transformer models.
 
 <div class="text-center my-2">
-  <img src="{{ 'assets/img/IIITDWD_architecture.png' | relative_url }}" alt="Project Architecture" class="img-fluid rounded z-depth-1" width="600" loading="lazy">
+  <img
+    src="{{ '/assets/img/IIITDWD_architecture.png' | relative_url }}"
+    alt="Architecture diagram"
+    class="img-fluid rounded z-depth-1"
+    width="600"
+    loading="lazy"
+  >
 </div>
-
 ---
 
 ## Dataset
