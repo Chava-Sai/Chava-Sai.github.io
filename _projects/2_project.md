@@ -2,7 +2,7 @@
 layout: page
 title: IIITDWD_SVC — DravidianLangTech 2024
 description: Breaking Language Barriers — Hate-Speech Detection in Telugu–English Code-Mixed Text (Rank 14, F1 = 0.6565)
-img: /assets/img/projects/dravidianlangtech.jpg   # optional preview image
+img: assets/img/dravidian.png   # optional preview image
 importance: 2
 category: work
 links:
@@ -17,9 +17,9 @@ Social media platforms foster communication but also amplify **hate and offensiv
 The **DravidianLangTech @ EACL 2024** shared task addressed **hate-speech detection** in **Telugu–English (Tenglish)** code-mixed YouTube comments, classifying them as *hate* or *non-hate*.  
 Our team **IIITDWD_SVC** developed a multilingual NLP pipeline integrating transliteration, translation, and fine-tuned transformer models.
 
-<p align="center">
-  <img src=assets/img/IIITDWD_architecture.png alt="Architecture diagram" width="600">
-</p>
+<div class="text-center my-2">
+  <img src="{{ 'assets/img/IIITDWD_architecture.png' | relative_url }}" alt="Project Architecture" class="img-fluid rounded z-depth-1" width="600" loading="lazy">
+</div>
 
 ---
 

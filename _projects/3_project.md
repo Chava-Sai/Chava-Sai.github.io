@@ -60,21 +60,31 @@ It combines generative and retrieval-based approaches to identify harmful conten
 
 ## Results
 
-### Hate-Speech Detection
-| Model | Macro-F1 (QLoRA) | Macro-F1 (RAG + QLoRA) |
-|:------|:---------------:|:----------------------:|
-| Mistral 7B | 72.3 | **72.8** |
-| DeepSeek 7B | 72.3 | 70.9 |
-| Zephyr Beta 7B | 69.6 | 70.8 |
-| Zephyr Alpha 7B | 67.1 | 69.7 |
+<h3>Hate-Speech Detection</h3>
+<table class="table table-sm">
+  <thead>
+    <tr><th>Model</th><th>Macro-F1 (QLoRA)</th><th>Macro-F1 (RAG + QLoRA)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Mistral 7B</td><td>72.3</td><td><strong>72.8</strong></td></tr>
+    <tr><td>DeepSeek 7B</td><td>72.3</td><td>70.9</td></tr>
+    <tr><td>Zephyr Beta 7B</td><td>69.6</td><td>70.8</td></tr>
+    <tr><td>Zephyr Alpha 7B</td><td>67.1</td><td>69.7</td></tr>
+  </tbody>
+</table>
 
-### Fake-News Detection
-| Model | Macro-F1 (QLoRA) | Macro-F1 (RAG + QLoRA) |
-|:------|:---------------:|:----------------------:|
-| Mistral 7B | 77.3 | **78.2** |
-| DeepSeek 7B | 74.7 | **78.4** |
-| Zephyr Beta 7B | 77.3 | 78.2 |
-| Zephyr Alpha 7B | 74.7 | 78.4 |
+<h3>Fake-News Detection</h3>
+<table class="table table-sm">
+  <thead>
+    <tr><th>Model</th><th>Macro-F1 (QLoRA)</th><th>Macro-F1 (RAG + QLoRA)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Mistral 7B</td><td>77.3</td><td><strong>78.2</strong></td></tr>
+    <tr><td>DeepSeek 7B</td><td>74.7</td><td><strong>78.4</strong></td></tr>
+    <tr><td>Zephyr Beta 7B</td><td>77.3</td><td>78.2</td></tr>
+    <tr><td>Zephyr Alpha 7B</td><td>74.7</td><td>78.4</td></tr>
+  </tbody>
+</table>
 
 ---
 
@@ -84,4 +94,16 @@ It combines generative and retrieval-based approaches to identify harmful conten
 git clone https://github.com/Chava-Sai/Explainable-Hate-Speech-Detection-using-Generative-AI
 cd Explainable-Hate-Speech-Detection-using-Generative-AI
 pip install -r requirements.txt
+```
+## Preprocess Data
+```bash
+python preprocess.py --input_path path_to_data
+```
+## Train the Model
+```bash
+python train.py --model QLoRA
+```
+## Evaluate
+```bash
+python evaluate.py --test_data path_to_test_data
 ```
