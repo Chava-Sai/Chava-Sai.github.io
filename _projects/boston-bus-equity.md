@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: page
 title: Boston Bus Equity
 date: 2025-09-15
@@ -8,4 +8,4 @@ links:
   - name: code
     url: https://github.com/Chava-Sai/Boston-Bus-Equity-CS506-Final-Project
 ---
-... -->
+...
