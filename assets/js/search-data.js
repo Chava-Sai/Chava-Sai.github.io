@@ -440,11 +440,6 @@ ninja.data = [{
           description: "multilingual pipeline with qlora finetuning and retrieval for grounded explanations",
           section: "Projects",handler: () => {
               window.location.href = "/projects/explainable-hate-speech/";
-            },},{id: "projects-boston-bus-equity",
-          title: 'Boston Bus Equity',
-          description: "analyzing mbta bus reliability and equity across neighborhoods",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/boston-bus-equity/";
             },},{
         id: 'social-email',
         title: 'email',
