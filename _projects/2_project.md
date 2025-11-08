@@ -17,15 +17,10 @@ Social media platforms foster communication but also amplify **hate and offensiv
 The **DravidianLangTech @ EACL 2024** shared task addressed **hate-speech detection** in **Telugu–English (Tenglish)** code-mixed YouTube comments, classifying them as *hate* or *non-hate*.  
 Our team **IIITDWD_SVC** developed a multilingual NLP pipeline integrating transliteration, translation, and fine-tuned transformer models.
 
-<div class="text-center my-2">
-  <img
-    src="{{ '/assets/img/IIITDWD_architecture.png' | relative_url }}"
-    alt="Architecture diagram"
-    class="img-fluid rounded z-depth-1"
-    width="600"
-    loading="lazy"
-  >
-</div>
+<p align="center">
+  <img src=assets/img/IIITDWD_architecture.png alt="Architecture diagram" width="600">
+</p>
+
 ---
 
 ## Dataset
