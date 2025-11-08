@@ -436,9 +436,9 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-11-05-site-launched/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+            },},{id: "projects-translators-comparison-google-vs-ai4bharat-indictrans2",
+          title: 'Translators Comparison — Google vs AI4Bharat (IndicTrans2)',
+          description: "STS &amp; BLEU evaluation of Google Translate vs. AI4Bharat’s IndicTrans2 on IIT-Bombay Hindi–English data.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
