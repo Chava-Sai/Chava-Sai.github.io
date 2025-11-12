@@ -2,14 +2,14 @@
 layout: page
 title: Fake and Hate Speech Detection in Multilingual Social Media Text
 description: Multi-task learning model for detecting fake news and hate speech in multilingual, code-mixed text using embeddings, clustering, and shared neural layers.
-img: /assets/img/fakehate.png   # preview image on projects grid
+img: assets/img/fakehate.png   # preview image on projects grid
 importance: 4
 category: work
 ---
 
 <!-- top-only button -->
 <div class="mb-3">
-  <a class="btn btn-sm btn-primary" href="https://github.com/Chava-Sai/Fake-and-Hate-Speech-Detection" target="_blank" rel="noopener">Code</a>
+  <a class="btn btn-sm btn-primary" href="https://github.com/Chava-Sai/Fake-Hate-Investigating-the-role-of-fake-narratives-in-spreading-hateful-reactions" target="_blank" rel="noopener">Code</a>
 </div>
 
 ## Overview
@@ -51,23 +51,34 @@ Architecture includes:
 - **Branch 2:** Hate detection.  
 - **Cluster Features:** Added as auxiliary signals.
 
-<div class="text-center my-3">
-  <img src="https://i.imgur.com/706v4QX.png" alt="Shared Layers Flow" class="img-fluid rounded z-depth-1" width="600">
-</div>
 
 ---
 
 ## Visualization
 
 ### Cluster Formation & Distance Calculation
+
 <div class="row">
   <div class="col-sm-6 text-center">
-    <p><strong>Cluster Formation</strong></p>
-    <img src=assets/img/TSNE.png alt="Cluster Formation" class="img-fluid rounded z-depth-1" width="420">
+    <p><strong>Cluster formation (t-SNE)</strong></p>
+    <img
+      src="{{ '/assets/img/TSNE.png' | relative_url }}"
+      alt="t-SNE visualization of route clusters"
+      class="img-fluid rounded z-depth-1"
+      loading="lazy"
+    >
+    <p class="caption text-muted mt-1">t-SNE projection of route embeddings colored by cluster.</p>
   </div>
+
   <div class="col-sm-6 text-center">
-    <p><strong>Distance Calculation</strong></p>
-    <img src=assets/img/Accuracy.png alt="Accuracy Over Epochs" class="img-fluid rounded z-depth-1" width="420">
+    <p><strong>Distance calculation / accuracy</strong></p>
+    <img
+      src="{{ '/assets/img/Accuracy.png' | relative_url }}"
+      alt="Accuracy over epochs for cluster-distance features"
+      class="img-fluid rounded z-depth-1"
+      loading="lazy"
+    >
+    <p class="caption text-muted mt-1">Training accuracy trend with distance-to-centroid features.</p>
   </div>
 </div>
 

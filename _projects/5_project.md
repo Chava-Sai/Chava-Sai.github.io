@@ -32,14 +32,15 @@ The study uses clustering techniques to group routes with similar operational pr
 After downloading the cleaned data from Kaggle, place files under:
 
 Boston-Bus-Equity-CS506-Final-Project/
-├── data_cleaned_capped/
-│   ├── arrival_departure.parquet
-│   ├── ridership.csv
-│   └── survey.csv
-├── notebooks/clustering/
-│   ├── clustering.ipynb
-│   └── hierarchical_clustering.ipynb
-└── README.md
+|-- data_cleaned_capped/
+|   |-- arrival_departure.parquet
+|   |-- ridership.csv
+|   `-- survey.csv
+|-- notebooks/
+|   `-- clustering/
+|       |-- clustering.ipynb
+|       `-- hierarchical_clustering.ipynb
+`-- README.md
 
 ### Run the Analysis
 All clustering and visualizations are implemented in the notebooks inside  

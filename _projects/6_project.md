@@ -1,80 +1,131 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Chat Buddy — Real-Time Communication App
+description: Cross-platform group chat, voice, and video calling app built with Flutter and Firebase.
+img: assets/img/chatbuddy.png   # optional preview image for project grid
+importance: 6
+category: Flutter and Firebase Mobile Applications
+links:
+  - name: code
+    url: https://github.com/Chava-Sai/Chat-Buddy
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
+**Chat Buddy** is a real-time chat and collaboration app built using **Flutter**, **Firebase**, and **Zego Cloud**.  
+It enables seamless communication through **group chats**, **voice**, and **video calls** — designed with role differentiation for admins and students, ensuring privacy, simplicity, and a great user experience.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div class="text-center my-3">
+  <img src="{{ '/assets/img/chatbuddy-hero.png' | relative_url }}" alt="Chat Buddy App UI" class="img-fluid rounded z-depth-1" width="600" loading="lazy">
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Features
+- 💬 **Instant Messaging** — Dynamic group chat with live message updates via Firestore.  
+- 🎥 **Video & Voice Calls** — High-quality calls using **Zego Cloud SDK**.  
+- 👥 **Role Differentiation** — Admins manage groups; students communicate within assigned spaces.  
+- 🔐 **Secure Authentication** — Firebase-based login, sign-up, and password recovery.  
+- ⚙️ **Group Management** — View members, create or exit groups, and moderate activity.  
+- 🌐 **Cross-Platform** — Runs smoothly on Android and iOS.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## Screenshots
+<table>
+  <tr>
+    <td align="center"><strong>Login Screen</strong><br><img src="https://github.com/Chava-Sai/Chat-Buddy/assets/129037829/3626916d-c15e-4387-b58f-92816cb675f3" width="380"></td>
+    <td align="center"><strong>Signup</strong><br><img src="https://github.com/Chava-Sai/Chat-Buddy/assets/129037829/1b6fb915-2729-4892-9277-b4e8fea64cd9" width="380"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Home Screen</strong><br><img src="https://github.com/Chava-Sai/Chat-Buddy/assets/129037829/0e459464-7683-49ff-988b-9dc3743cc14d" width="380"></td>
+    <td align="center"><strong>Group Chat</strong><br><img src="https://github.com/Chava-Sai/Chat-Buddy/assets/129037829/de44c93e-77d9-4c17-97f8-726ec3ec1be5" width="380"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Audio Call</strong><br><img src="https://github.com/Chava-Sai/Chat-Buddy/assets/129037829/21e88f05-93e4-43cd-ad00-ffd1241a131a" width="380"></td>
+    <td align="center"><strong>Video Call</strong><br><img src="https://github.com/Chava-Sai/Chat-Buddy/assets/129037829/466e9b56-c25c-4e5e-baab-bd52becdef01" width="380"></td>
+  </tr>
+</table>
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+---
+
+## Technology Stack
+| Layer | Technologies Used |
+|:------|:------------------|
+| **Frontend** | Flutter |
+| **Backend** | Firebase (Authentication, Firestore) |
+| **Realtime Calls** | Zego Cloud SDK |
+| **Storage & State** | Shared Preferences, Firestore Streams |
+| **HTTP Requests** | Flutter `http` package |
+
+---
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Chava-Sai/Chat-Buddy.git
+cd Chat-Buddy
 ```
 
-{% endraw %}
+## Install dependencies
+
+```bash
+flutter pub get
+```
+
+## Run the app
+
+```bash
+flutter run
+```
+
+> 💡 **Before running:** add your Firebase configuration for both **Android** and **iOS** (Google Services files).
+
+---
+
+## Authentication
+
+Chat Buddy uses **Firebase Authentication** for secure, role-based access.
+
+| Role            | Access                                      |
+|-----------------|---------------------------------------------|
+| **Admin**       | Create & manage groups, moderate users      |
+| **Student**     | Join groups, chat, and make calls           |
+| **Forgot Password** | Reset via Firebase email recovery          |
+
+---
+
+## Integration
+
+### Firebase Firestore
+- **Users** collection: stores user info, groups, and IDs.  
+- **Groups** collection: manages messages and membership data.
+
+### Zego Cloud
+Integrated via **Zego Cloud SDK** for voice and video calls, using Flutter plugins for API communication and session control.
+
+---
+
+## Widgets & UI Components
+- Custom chat bubbles with dynamic alignment  
+- `StreamBuilder` widgets for live Firestore updates  
+- Integrated media buttons for call/chat toggles  
+- Profile, settings, and group-info screens with persistent state management
+
+---
+
+## Future Enhancements
+- 🧩 Push notifications via **Firebase Cloud Messaging (FCM)**
+- 💾 Offline chat caching with **Hive**
+- 📱 Typing indicators & message delivery status
+- 🌙 Dark mode and adaptive theming for accessibility
+
+---
+
+## Contributors
+- **Developer:** Srinivasa Sai Chava  
+- **Repo:** [Chat-Buddy on GitHub](https://github.com/Chava-Sai/Chat-Buddy)
+
+---
+
+> “Let’s chat, connect, and build communities with privacy and purpose.”
