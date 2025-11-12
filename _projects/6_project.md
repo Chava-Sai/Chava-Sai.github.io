@@ -15,7 +15,7 @@ links:
 It enables seamless communication through **group chats**, **voice**, and **video calls** — designed with role differentiation for admins and students, ensuring privacy, simplicity, and a great user experience.
 
 <div class="text-center my-3">
-  <img src="{{ '/assets/img/chatbuddy-hero.png' | relative_url }}" alt="Chat Buddy App UI" class="img-fluid rounded z-depth-1" width="600" loading="lazy">
+  <img src="{{ 'assets/img/chatbuddy.png' | relative_url }}" alt="Chat Buddy App" class="img-fluid rounded z-depth-1" width="600" loading="lazy">
 </div>
 
 ---
