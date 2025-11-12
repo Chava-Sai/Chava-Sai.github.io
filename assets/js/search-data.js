@@ -440,16 +440,11 @@ ninja.data = [{
           description: "Clustering MBTA bus routes to analyze reliability and equity using ridership, arrival–departure, and 2024 survey data.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-chat-buddy-real-time-communication-app",
+          title: 'Chat Buddy — Real-Time Communication App',
+          description: "Cross-platform group chat, voice, and video calling app built with Flutter and Firebase.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
