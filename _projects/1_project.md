@@ -5,10 +5,12 @@ description: STS & BLEU evaluation of Google Translate vs. AI4Bharat’s IndicTr
 img: assets/img/translators.png  # optional: add an image at this path or delete this line
 importance: 1
 category: work
-links:
-  - name: code
-    url: https://github.com/Chava-Sai/Translators_Comparsion
 ---
+
+<!-- top-only button -->
+<div class="mb-3">
+  <a class="btn btn-sm btn-primary" href="https://github.com/Chava-Sai/Translators_Comparsion" target="_blank" rel="noopener">Code</a>
+</div>
 
 ## Problem Statement
 In light of Google Translate’s weaknesses for low-resource and certain Indic languages, can we identify a stronger alternative?  

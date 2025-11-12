@@ -1,80 +1,126 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Fake and Hate Speech Detection in Multilingual Social Media Text
+description: Multi-task learning model for detecting fake news and hate speech in multilingual, code-mixed text using embeddings, clustering, and shared neural layers.
+img: /assets/img/fakehate.png   # preview image on projects grid
+importance: 4
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<!-- top-only button -->
+<div class="mb-3">
+  <a class="btn btn-sm btn-primary" href="https://github.com/Chava-Sai/Fake-and-Hate-Speech-Detection" target="_blank" rel="noopener">Code</a>
+</div>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Overview
+This project focuses on identifying **fake news** and **hate speech** in multilingual social media posts, leveraging transliteration, translation, embedding extraction, and clustering techniques to improve detection accuracy.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<div class="text-center my-3">
+  <img src="https://i.imgur.com/a4msRUM.png" alt="Model Flow" class="img-fluid rounded z-depth-1" width="700">
+</div>
 
+---
+
+## Features
+- **Transliteration & Translation** — Convert *Hinglish* text to Hindi and English using *IndicXlit* and *IndicTrans2*.
+- **Embedding Extraction** — Use pre-trained models like *BERT*, *XLM-RoBERTa*, *ALBERT*, *Electra*, and *mBERT*.
+- **Cluster-Based Feature Engineering** — Compute distances from cluster centers for enhanced representation.
+- **Multi-Task Architecture** — Shared layers for simultaneous *Fake Detection* and *Hate Detection*.
+
+---
+
+## Model Architecture
+
+### Preprocessing
+1. **Text Cleaning:** Remove symbols, punctuation, and normalize emojis.  
+2. **Transliteration:** Convert Hinglish → Hindi using *IndicXlit*.  
+3. **Translation:** Translate Hindi → English using *IndicTrans2*.  
+
+### Embedding Extraction
+Embeddings generated from:
+- **BERT**
+- **XLM-RoBERTa**
+- **ALBERT**
+- **Electra**
+- **mBERT**
+
+### Multi-Task Learning
+Architecture includes:
+- **Shared Layers** — Used by both fake and hate classifiers.  
+- **Branch 1:** Fake detection.  
+- **Branch 2:** Hate detection.  
+- **Cluster Features:** Added as auxiliary signals.
+
+<div class="text-center my-3">
+  <img src="https://i.imgur.com/706v4QX.png" alt="Shared Layers Flow" class="img-fluid rounded z-depth-1" width="600">
+</div>
+
+---
+
+## Visualization
+
+### Cluster Formation & Distance Calculation
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-6 text-center">
+    <p><strong>Cluster Formation</strong></p>
+    <img src=assets/img/TSNE.png alt="Cluster Formation" class="img-fluid rounded z-depth-1" width="420">
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-6 text-center">
+    <p><strong>Distance Calculation</strong></p>
+    <img src=assets/img/Accuracy.png alt="Accuracy Over Epochs" class="img-fluid rounded z-depth-1" width="420">
   </div>
 </div>
+
+### Results Comparison
+<div class="row my-3">
+  <div class="col-sm-6 text-center">
+    <p><strong>Fake Detection Results</strong></p>
+    <img src="https://i.imgur.com/dCszwHq.png" alt="Fake Detection Results" class="img-fluid rounded z-depth-1" width="420">
+  </div>
+  <div class="col-sm-6 text-center">
+    <p><strong>Hate Detection Results</strong></p>
+    <img src="https://i.imgur.com/S1EkNta.png" alt="Hate Detection Results" class="img-fluid rounded z-depth-1" width="420">
+  </div>
+</div>
+
+---
+
+## Results
+| Model        | Task             | F1 Score (No Clusters) | F1 Score (With Clusters) |
+|:-------------|:-----------------|:----------------------:|:------------------------:|
+| **BERT**     | Hate Detection   | 81.97 | **97.15** |
+| **Electra**  | Fake Detection   | 70.16 | **73.11** |
+| **XLM-RoBERTa** | Hate Detection | 77.99 | **78.75** |
+| **XLM-RoBERTa** | Fake Detection | 72.96 | **76.21** |
+
+<div class="text-center my-2">
+  <img src="https://i.imgur.com/a4msRUM.png" alt="Final Architecture Overview" class="img-fluid rounded z-depth-1" width="700">
+</div>
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/Chava-Sai/Fake-and-Hate-Speech-Detection
+cd Fake-and-Hate-Speech-Detection
+pip install -r requirements.txt
 ```
 
-{% endraw %}
+## Preprocess Data
+
+```bash
+python preprocess.py --input_path path_to_data
+```
+
+## Train the Model
+
+```bash
+python train.py --model multi_task_model
+```
+
+## Evaluate
+
+```bash
+python evaluate.py --test_data path_to_test_data
+```

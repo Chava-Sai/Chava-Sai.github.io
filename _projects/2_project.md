@@ -5,12 +5,13 @@ description: Breaking Language Barriers — Hate-Speech Detection in Telugu–En
 img: assets/img/dravidian.png   # optional preview image
 importance: 2
 category: work
-links:
-  - name: code
-    url: https://github.com/Chava-Sai/IIITDWD_SVC-DravidianLangTech-2024
-  - name: publication
-    url: https://aclanthology.org/2024.dravidianlangtech-1.19/
 ---
+
+<!-- top-only buttons -->
+<div class="mb-3">
+  <a class="btn btn-sm btn-primary" href="https://github.com/Chava-Sai/IIITDWD_SVC-DravidianLangTech-2024" target="_blank" rel="noopener">Code</a>
+  <a class="btn btn-sm btn-outline-primary" href="https://aclanthology.org/2024.dravidianlangtech-1.19/" target="_blank" rel="noopener">Publication</a>
+</div>
 
 ## Overview
 Social media platforms foster communication but also amplify **hate and offensive language**.  

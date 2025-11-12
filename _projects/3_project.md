@@ -5,10 +5,12 @@ description: Multilingual hate-speech and fake-news detection using QLoRA and Re
 img: /assets/img/LLMArchitecture.png    # preview image on the projects grid
 importance: 3
 category: work
-links:
-  - name: code
-    url: https://github.com/Chava-Sai/Explainable-Hate-Speech-Detection-using-Generative-AI
 ---
+
+<!-- top-only button -->
+<div class="mb-3">
+  <a class="btn btn-sm btn-primary" href="https://github.com/Chava-Sai/Explainable-Hate-Speech-Detection-using-Generative-AI" target="_blank" rel="noopener">Code</a>
+</div>
 
 ## Overview
 This project explores the detection of **hate speech** and **fake news** using **Quantized Low-Rank Adaptation (QLoRA)** and **Retrieval-Augmented Generation (RAG)**.  
