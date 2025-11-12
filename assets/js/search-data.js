@@ -445,36 +445,11 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-fakehate-multitask-fake-news-hate-speech",
-          title: 'FakeHate — Multitask Fake News + Hate Speech',
-          description: "joint modeling of fake news and hate speech in multilingual social media",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/fakehate-multitask/";
-            },},{id: "projects-explainable-hate-speech-detection-qlora-rag",
-          title: 'Explainable Hate Speech Detection (QLoRA + RAG)',
-          description: "multilingual pipeline with qlora finetuning and retrieval for grounded explanations",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/explainable-hate-speech/";
-            },},{id: "projects-boston-bus-equity",
-          title: 'Boston Bus Equity',
-          description: "analyzing mbta bus reliability and equity across neighborhoods",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/boston-bus-equity/";
             },},{
         id: 'social-email',
         title: 'email',
