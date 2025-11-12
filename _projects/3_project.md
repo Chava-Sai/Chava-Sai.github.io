@@ -3,8 +3,8 @@ layout: page
 title: Explainable Hate Speech Detection using Generative AI
 description: Multilingual hate-speech and fake-news detection using QLoRA and Retrieval-Augmented Generation (RAG).
 img: /assets/img/LLMArchitecture.png    # preview image on the projects grid
-importance: 3
-category: work
+importance: 2
+category: Machine Learning and Deep Learning
 ---
 
 <!-- top-only button -->

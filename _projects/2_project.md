@@ -3,8 +3,8 @@ layout: page
 title: IIITDWD_SVC — DravidianLangTech 2024
 description: Breaking Language Barriers — Hate-Speech Detection in Telugu–English Code-Mixed Text (Rank 14, F1 = 0.6565)
 img: assets/img/dravidian.png   # optional preview image
-importance: 2
-category: work
+importance: 3
+category: Machine Learning and Deep Learning
 ---
 
 <!-- top-only buttons -->

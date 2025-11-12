@@ -3,8 +3,8 @@ layout: page
 title: Boston MBTA Bus Equity & Reliability (CS506 Final Project)
 description: Clustering MBTA bus routes to analyze reliability and equity using ridership, arrival–departure, and 2024 survey data.
 img: assets/img/mbta-bus.jpg   # preview image on the projects grid
-importance: 5
-category: work
+importance: 1
+category: Machine Learning and Deep Learning
 links:
   - name: code
     url: https://github.com/Chava-Sai/Boston-Bus-Equity-CS506-Final-Project

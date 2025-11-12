@@ -4,7 +4,7 @@ title: Fake and Hate Speech Detection in Multilingual Social Media Text
 description: Multi-task learning model for detecting fake news and hate speech in multilingual, code-mixed text using embeddings, clustering, and shared neural layers.
 img: assets/img/fakehate.png   # preview image on projects grid
 importance: 4
-category: work
+category: Machine Learning and Deep Learning
 ---
 
 <!-- top-only button -->
